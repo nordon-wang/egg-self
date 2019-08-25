@@ -10,7 +10,7 @@ const Subscription = require('egg').Subscription;
 class Log2Subscription extends Subscription {
   static get schedule() { // 配置定时任务
     return {
-      interval: '2s',
+      interval: '200000s',
       type: 'worker', // all, worker
     };
   }
